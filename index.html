@@ -425,7 +425,7 @@
 
 <body
   class="home page-template page-template-elementor_canvas page page-id-10 elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-10 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit dialog-body dialog-lightbox-body dialog-container dialog-lightbox-container"
-  data-elementor-device-mode="desktop">
+  data-elementor-device-mode="desktop" style="background-color:#151515;">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
     <defs>
@@ -567,7 +567,7 @@
                 <div class="comingsoon-page">
                   <div class="comingsoon-content">
                     <span>Contáctanos y agenda tu sesión</span>
-                    <a href="https://wa.me/525535224511" class="comingsoon-link">
+                    <a href="https://wa.me/525520839782" class="comingsoon-link">
                       <span class="position">WhatsApp</span>
                       <span class="email">+52 55 2083 9782</span>
                     </a><a href="https://www.instagram.com/foto_estudio13/" class="comingsoon-link">
@@ -590,9 +590,14 @@
 
                     if (window.innerWidth > window.innerHeight || window.innerWidth > 960) {
                       $('section[data-id="3ef21ad5"]').prepend('<div class="elementor-background-video-container"><video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="videoweb.mp4"></video></div>');
-                    } else {
+                    } else if(window.matchMedia("(orientation:landscape)").matches) {
                       $('section[data-id="3ef21ad5"]').prepend('<div class="elementor-background-video-container"><video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="videoweb2.mp4"></video></div>');
                     }
+                        else{
+                          $('section[data-id="3ef21ad5"]').prepend('<div class="elementor-background-video-container"><video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="videoweb2.mp4"></video></div>');
+  
+                        }
+                    
 
                   })(jQuery)
                 </script>
